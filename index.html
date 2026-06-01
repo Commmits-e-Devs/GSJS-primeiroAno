@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/variaveis.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/slideshow.css">
-    <script src="js/slideshow.js"></script>
+    <script src="./script.js" defer></script>
+    <script src="script/trocafundo.js" defer></script>
+    <link rel="stylesheet" href="css/trocafundoCSS.css">
 </head>
 
 <body>
@@ -28,6 +29,11 @@
                 <li><a href="#publico">Público-Alvo</a></li>
                 <li><a href="#beneficios">Benefícios</a></li>
                 <li><a href="#dia-a-dia">Dia a Dia</a></li>
+                <div class="controles">
+                    <li><button onclick="mudarTema('tema-claro')"> Claro</button></li>
+                    <li><button onclick="mudarTema('tema-escuro')"> Escuro</button></li>
+                    <li><button onclick="mudarTema('tema-azul')"> Azul</button></li>
+                </div>
             </ul>
         </nav>
     </header>
