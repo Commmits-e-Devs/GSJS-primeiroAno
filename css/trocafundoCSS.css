@@ -1,34 +1,48 @@
-/* Tema 1: Claro (Padrão) */
-body.tema-claro {
-    background-color: #ffffff;
-    color: #333333;
-}
-
-/* Tema 2: Escuro */
-body.tema-escuro {
-    background-color: #1a1a1a;
-    color: #ffffff;
-}
-
-/* Tema 3: Azul/Oceano */
-body.tema-azul {
-    background-color: #0d2740;
-    color: #e0f2fe;
-}
-
-/* Estilos básicos */
+/* Adiciona uma transição suave para o fundo e para a cor do texto não mudarem de forma brusca */
 body {
-    font-family: Arial, sans-serif;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    padding: 20px;
+    transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-button {
-    padding: 10px 20px;
-    margin-right: 10px;
-    cursor: pointer;
-    border: 1px solid #ccc;
+/* =========================================
+   TEMAS
+   ========================================= */
+
+/* Tema Claro (Padrão) */
+body.tema-claro {
+    background-color: #f8f9fa; /* Um branco levemente acinzentado */
+    color: #212529; /* Texto escuro */
+}
+
+/* Tema Escuro */
+body.tema-escuro {
+    background-color: #121212; /* Cinza bem escuro, padrão de dark mode */
+    color: #f8f9fa; /* Texto claro */
+}
+
+/* Tema Azul (Oceano/Espaço) */
+body.tema-azul {
+    background-color: #091325; /* Azul bem escuro, combina com o tema espacial */
+    color: #e0f2fe; /* Texto azul bem clarinho */
+}
+
+/* Ajuste opcional para os botões do menu ficarem bonitos */
+.controles {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.controles button {
+    background: transparent;
+    color: inherit; /* Herda a cor do tema atual */
+    border: 1px solid currentColor; /* A borda acompanha a cor do texto */
+    padding: 5px 10px;
     border-radius: 5px;
-    font-weight: bold;
-    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Exo 2', sans-serif;
+    transition: 0.3s;
+}
+
+.controles button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Efeito sutil ao passar o mouse */
 }
