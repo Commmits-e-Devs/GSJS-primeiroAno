@@ -1,0 +1,97 @@
+/* Transição suave para todos os elementos que mudam de cor */
+body, .navbar, .dark-bg, footer, h1, h2, p, .target-card, .nav-links a {
+    transition: background-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* =========================================
+   🌙 TEMA 1: ESCURO (Espaço Profundo - Seu Padrão)
+   ========================================= */
+body.tema-escuro, 
+body.tema-escuro footer {
+    background-color: #000000;
+    color: #e2e8f0;
+}
+body.tema-escuro .navbar {
+    background-color: rgba(0, 0, 0, 0.95);
+}
+body.tema-escuro .dark-bg {
+    background-color: #1c2541;
+    box-shadow: 1px 1px 30px #24245B;
+}
+body.tema-escuro .text-block h2 { color: #ffffff; }
+body.tema-escuro .text-block p { color: #cbd5e1; }
+
+
+/* =========================================
+   ☀️ TEMA 2: CLARO (Base Lunar)
+   ========================================= */
+body.tema-claro, 
+body.tema-claro footer {
+    background-color: #f1f5f9; /* Cinza-gelo bem claro */
+    color: #0f172a; /* Azul-ardósia muito escuro para o texto */
+}
+body.tema-claro .navbar {
+    background-color: rgba(241, 245, 249, 0.95);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.1);
+}
+body.tema-claro .nav-links a { color: #0f172a; }
+body.tema-claro .nav-links a:hover { color: #0284c7; } /* Azul mais escuro no hover */
+
+body.tema-claro .dark-bg {
+    background-color: #e2e8f0; /* Fundo levemente mais escuro para destacar a seção */
+    box-shadow: 1px 1px 30px rgba(0,0,0,0.05);
+}
+body.tema-claro .text-block h2 { color: #0f172a; }
+body.tema-claro .text-block p { color: #334155; }
+body.tema-claro .target-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #0f172a;
+}
+/* Força o texto da imagem Hero a continuar branco no tema claro */
+body.tema-claro .hero-content h1 { color: #ffffff; }
+body.tema-claro .hero-content p { color: #e2e8f0; }
+
+
+/* =========================================
+   🌊 TEMA 3: AZUL (Nebulosa / Oceano)
+   ========================================= */
+body.tema-azul, 
+body.tema-azul footer {
+    background-color: #0a1128; /* Um azul incrivelmente profundo (Dark Teal) */
+    color: #e0f2fe;
+}
+body.tema-azul .navbar {
+    background-color: rgba(10, 17, 40, 0.95);
+}
+body.tema-azul .dark-bg {
+    background-color: #123258; /* Azul oceano profundo */
+    box-shadow: 1px 1px 30px rgba(18, 50, 88, 0.5);
+}
+body.tema-azul .text-block h2 { color: #ffffff; }
+body.tema-azul .text-block p { color: #bae6fd; }
+body.tema-azul .target-card {
+    background-color: rgba(10, 17, 40, 0.6);
+}
+
+/* =========================================
+   ESTILO DOS BOTÕES DE TROCA
+   ========================================= */
+.controles {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.controles button {
+    background: rgba(255, 255, 255, 0.05);
+    color: inherit;
+    border: 1px solid rgba(76, 201, 240, 0.3);
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Exo 2', sans-serif;
+    transition: 0.3s;
+}
+.controles button:hover {
+    background-color: rgba(76, 201, 240, 0.15);
+    border-color: #4cc9f0;
+}
