@@ -1,0 +1,34 @@
+/* Tema 1: Claro (Padrão) */
+body.tema-claro {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Tema 2: Escuro */
+body.tema-escuro {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* Tema 3: Azul/Oceano */
+body.tema-azul {
+    background-color: #0d2740;
+    color: #e0f2fe;
+}
+
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
