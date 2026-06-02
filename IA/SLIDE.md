@@ -10,3 +10,5 @@ A IA clonou o repositório, analisou a estrutura existente e implementou o slide
 
 Consideração final
 A IA foi utilizada como ferramenta de apoio ao desenvolvimento. Todo o código gerado foi revisado e integrado manualmente pela equipe ao repositório do projeto.
+
+Por fim, analisei o codigo feito pela IA e após a análise fiz algumas alterações: troquei os textos que foram fornecidos, retirei do código informações e funções aplicadas que eram desnecessárias e aumentei o tempo para a passagem de cada slide. Assim, mantive o site limpo e retirando a poluiçõa que havia sido implementada com as questões da IA.
