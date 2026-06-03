@@ -15,9 +15,11 @@
     <link rel="stylesheet" href="css/quiz.css">
     <link rel="stylesheet" href="css/trocafundoCSS.css">
     <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="css/cadastro.css">
     <script src="script/trocafundo.js" defer></script>
     <script src="script/slideshow.js" defer></script>
     <script src="script/quiz.js" defer></script>
+    <script src="script/cadastro.js" defer></script>
 </head>
 
 <body>
@@ -158,6 +160,34 @@
                     <li>Engenheiros simulam rotas seguras e executam desvios automáticos baseados em alertas preditivos
                         de colisão.</li>
                 </ul>
+            </div>
+        </section>
+        <section id="cadastro" class="section-container">
+            <div class="cadastro-wrapper">
+
+                <div class="cadastro-form-box">
+                    <h2>Faça seu Cadastro</h2>
+                    <br>
+                    <form id="meuFormulario">
+                        <label for="nome" class="cadastro-label">Seu Nome:</label>
+                        <input type="text" id="nome" class="option-item" placeholder="Digite seu nome completo">
+
+                        <label for="idade" class="cadastro-label">Sua Idade:</label>
+                        <input type="number" id="idade" class="option-item" placeholder="Digite sua idade">
+
+                        <div id="mensagemErro" class="cadastro-error-msg"></div>
+
+                        <div class="quiz-footer">
+                            <button type="submit" id="btn-next">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="sessaoBoasVindas" class="cadastro-welcome-box">
+                    <h3 class="cadastro-welcome-title">Bem-vindo!</h3>
+                    <p id="textoBoasVindas" class="result-text"></p>
+                </div>
+
             </div>
         </section>
 
